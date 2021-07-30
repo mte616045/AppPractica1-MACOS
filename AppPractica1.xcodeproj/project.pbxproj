@@ -12,6 +12,8 @@
 		584394FD2699D4B3006B02AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 584394FC2699D4B3006B02AD /* Assets.xcassets */; };
 		584395002699D4B3006B02AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 584394FE2699D4B3006B02AD /* Main.storyboard */; };
 		584395032699D4B3006B02AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 584395022699D4B3006B02AD /* main.m */; };
+		584395122699DD98006B02AD /* Datos.m in Sources */ = {isa = PBXBuildFile; fileRef = 584395112699DD98006B02AD /* Datos.m */; };
+		58D8421F269F901800F91D32 /* Persona.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D8421E269F901800F91D32 /* Persona.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,10 @@
 		584395012699D4B3006B02AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		584395022699D4B3006B02AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		584395042699D4B3006B02AD /* AppPractica1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppPractica1.entitlements; sourceTree = "<group>"; };
+		584395102699DD98006B02AD /* Datos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Datos.h; sourceTree = "<group>"; };
+		584395112699DD98006B02AD /* Datos.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Datos.m; sourceTree = "<group>"; };
+		58D8421D269F901800F91D32 /* Persona.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Persona.h; sourceTree = "<group>"; };
+		58D8421E269F901800F91D32 /* Persona.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Persona.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 		584394F52699D4B2006B02AD /* AppPractica1 */ = {
 			isa = PBXGroup;
 			children = (
+				5843950F2699DD6C006B02AD /* Models */,
+				5843950D2699D504006B02AD /* Controllers */,
+				5843950C2699D4D1006B02AD /* Views */,
 				584394F62699D4B2006B02AD /* AppDelegate.h */,
 				584394F72699D4B2006B02AD /* AppDelegate.m */,
 				584394F92699D4B2006B02AD /* ViewController.h */,
@@ -66,8 +75,33 @@
 				584395012699D4B3006B02AD /* Info.plist */,
 				584395022699D4B3006B02AD /* main.m */,
 				584395042699D4B3006B02AD /* AppPractica1.entitlements */,
+				58D8421D269F901800F91D32 /* Persona.h */,
+				58D8421E269F901800F91D32 /* Persona.m */,
 			);
 			path = AppPractica1;
+			sourceTree = "<group>";
+		};
+		5843950C2699D4D1006B02AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		5843950D2699D504006B02AD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5843950F2699DD6C006B02AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				584395102699DD98006B02AD /* Datos.h */,
+				584395112699DD98006B02AD /* Datos.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +173,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				584394FB2699D4B2006B02AD /* ViewController.m in Sources */,
+				584395122699DD98006B02AD /* Datos.m in Sources */,
 				584395032699D4B3006B02AD /* main.m in Sources */,
 				584394F82699D4B2006B02AD /* AppDelegate.m in Sources */,
+				58D8421F269F901800F91D32 /* Persona.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

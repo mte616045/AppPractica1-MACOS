@@ -7,7 +7,22 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ViewController : NSViewController
+@interface ViewController : NSViewController<NSTableViewDataSource>
+{
+    NSMutableArray *resultados;
+}
+
+@property (strong) IBOutlet NSTextField *txtNumu;
+@property (strong) IBOutlet NSTextField *txtNumd;
+
+@property (strong) IBOutlet NSComboBox *cmbOperador;
+
+@property (strong) IBOutlet NSTableView *tabla;
+
+
+- (IBAction)Calcular:(id)sender;
+
+
 
 
 @end
